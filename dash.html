@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DASH</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .item1 {
+            grid-area: header;
+        }
+
+        .item2 {
+            grid-area: menu;
+        }
+
+        .item3 {
+            grid-area: main;
+        }
+
+        .item4 {
+            grid-area: right;
+        }
+
+        .item5 {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: whitesmoke;
+
+        }
+
+        .grid-container>div {
+            background-color: whitesmoke;
+            font-size: 20px;
+        }
+
+        .item1 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">e-Attaindance</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="dash.html">Home</a></li>
+                <li><a href="#">About Us hello</a></li>
+                <li><a href="#">Contact us</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="home.html"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="grid-container">
+        <div class="item1">E-Attanadance </div>
+        <div class="item2">
+            <h3>NAME :</h3>
+            <h3>ID :</h3>
+            <form>
+
+                <ul>
+                    <li><a class="btnacc" href="#">View My Attandance</a></li><br>
+                    <li><a class="btnacc" href="#">Check Class</a></li><br>
+                    <li><a class="btnacc" href="#">Check Time Table</a></li><br>
+                    <li><a class="btnacc" href="myaccount.html">My Account</a></li><br><br>
+                    <li><a class="btnacc" href="home.html"><b>Logout</b></a></li><br>
+                </ul>
+            </form>
+        </div>
+
+        <div class="item4">Right</div>
+
+    </div>
+
+</body>
+
+</html>
