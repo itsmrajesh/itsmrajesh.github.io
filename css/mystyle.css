@@ -1,9 +1,7 @@
 body{
-    background-color: #18B9D6;
+    background-color: rgb(24, 144, 214);
         padding: 0px;
         margin:0px;
-        background-image: url("man.jpg");
-        background-image:repeat 0;
 }
 
 header{

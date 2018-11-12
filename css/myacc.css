@@ -46,7 +46,7 @@ ul li a{
     font-weight: bold;
 }
 ul li a:hover{
-    color: #5C5555;
+    color: rgb(240, 233, 233);
 
 }
 ul li a:before{
