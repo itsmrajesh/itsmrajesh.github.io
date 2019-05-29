@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CGPA to Percentage Convertor</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        hr {
+            border: 1px solid red;
+        }
+    </style>
+    <script>
+        function calculatePercentage() {
+            var cgpa = document.getElementById("cgpa").value;
+            var percentage;
+            if (cgpa > 10) {
+                percentage = "Invalid CGPA Input";
+                alert("CGPA Should be Less than or equal to 10");
+            }
+            else {
+                percentage = (cgpa - 0.75) * 10;
+            }
+            document.getElementById("showpercentage").innerHTML = percentage + " %";
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="jumbotron text-center">
+        <h1 class="text-info">CGPA TO PERCENTAGE Calculator</h1>
+        <h3 class="text-primary">Converts CGPA to Percentage </h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5">
+                <form action="">
+                    <div class="form-group">
+                        <label for="cgpa">CGPA:</label>
+                        <input type="number" max="10" class="form-control" id="cgpa" name="cgpa"
+                            placeholder="Enter Your CGPA">
+                    </div>
+                    <button type="reset" class="btn btn-outline-warning">Clear</button> <br>
+                    <br>
+                </form>
+                <button class="btn btn-outline-success" onclick="calculatePercentage()">Calculate</button>
+
+            </div>
+            <div class="col-sm-6">
+                <h2 class="text-info">Calculated Percentage :-<p class="text-success" id="showpercentage"></p>
+                </h2>
+
+            </div>
+
+
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-8">
+                <h1 class="text-info"> Formula used - (cgpa-0.75)*10
+                </h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="text-info"> Design and Developed by <a href="https://github.com/itsmrajesh">M Rajesh</a></h3>
+                <h5 class="text-secondary">To View Source code <a href=""> Click Here </a></h5>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
