@@ -12,6 +12,10 @@
         hr {
             border: 1px solid red;
         }
+
+        /* body {
+            background-color: #e8eaed;
+        } */
     </style>
     <script>
         function calculatePercentage() {
@@ -22,9 +26,13 @@
                 alert("CGPA Should be Less than or equal to 10");
             }
             else {
-                percentage = (cgpa - 0.75) * 10 +" %";
+                percentage = (cgpa - 0.75) * 10 + " %";
             }
-            document.getElementById("showpercentage").innerHTML = percentage ;
+            document.getElementById("showpercentage").innerHTML = percentage;
+        }
+
+        function resetValue() {
+            document.getElementById("showpercentage").innerHTML = "";
         }
     </script>
 </head>
@@ -41,16 +49,16 @@
                 <form action="">
                     <div class="form-group">
                         <label for="cgpa">CGPA:</label>
-                        <input type="number" max="10" class="form-control" id="cgpa" name="cgpa"
+                        <input type="number" min="1" class="form-control" id="cgpa" name="cgpa"
                             placeholder="Enter Your CGPA">
                     </div>
-                    <button type="reset" class="btn btn-outline-warning">Clear</button> <br>
+                    <button type="reset" onclick="resetValue()" class="btn btn-outline-warning">Clear</button> <br>
                     <br>
                 </form>
                 <button class="btn btn-outline-success" onclick="calculatePercentage()">Calculate</button>
 
             </div>
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-6">
                 <h2 class="text-info">Calculated Percentage :-<p class="text-success" id="showpercentage"></p>
                 </h2>
 
@@ -60,7 +68,7 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col-sm-8 col-md-6">
+            <div class="col-sm-4 col-md-8">
                 <h1 class="text-info"> Formula used - (cgpa-0.75)*10
                 </h1>
             </div>
@@ -68,7 +76,8 @@
         <hr>
         <div class="row">
             <div class="col-sm-8 col-md-8">
-                <h3 class="text-info"> Design and Developed by M Rajesh <a class="btn btn-link" href="https://github.com/itsmrajesh">Know More</a></h3>
+                <h3 class="text-info"> Design and Developed by M Rajesh <a class="btn btn-link"
+                        href="https://github.com/itsmrajesh">Know More</a></h3>
                 <h5 class="text-secondary">To View Source code <a
                         href="https://github.com/itsmrajesh/itsmrajesh.github.io/blob/master/CgpaToPercentage.html">
                         Click Here </a></h5>
