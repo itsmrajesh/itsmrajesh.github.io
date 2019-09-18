@@ -84,6 +84,11 @@ p {
 	color: #444;
 }
 
+#cv-btn{
+    margin:0 auto;
+  display:table;
+}
+
 #contactDetails ul li a, a[href^=tel] {
 	color: #444; 
 	text-decoration: none;
