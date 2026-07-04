@@ -16,8 +16,8 @@ function App() {
     <div className="min-h-screen bg-gray-950 text-gray-100">
       <Navbar activeSection={activeSection} setActiveSection={setActiveSection} />
       <Hero />
-      <About />
       <Skills />
+      <About />
       <Experience />
       <Projects />
       <Awards />

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, Github, Linkedin, Send } from 'lucide-react'
+import { Mail, MapPin, Github, Linkedin } from 'lucide-react'
 import { profile } from '../data/profile'
 
 export default function Contact() {
@@ -33,20 +33,7 @@ export default function Contact() {
             </div>
           </a>
 
-          <a
-            href={`tel:${profile.phone}`}
-            className="group flex items-center gap-4 p-5 rounded-2xl bg-white/[0.02] border border-white/5 hover:border-indigo-500/30 transition-all"
-          >
-            <div className="p-3 rounded-xl bg-indigo-500/10 group-hover:bg-indigo-500/20 transition-colors">
-              <Phone size={20} className="text-indigo-400" />
-            </div>
-            <div>
-              <p className="text-sm text-gray-500">Phone</p>
-              <p className="text-sm text-gray-300">{profile.phone}</p>
-            </div>
-          </a>
-
-          <div className="group flex items-center gap-4 p-5 rounded-2xl bg-white/[0.02] border border-white/5">
+<div className="group flex items-center gap-4 p-5 rounded-2xl bg-white/[0.02] border border-white/5">
             <div className="p-3 rounded-xl bg-indigo-500/10">
               <MapPin size={20} className="text-indigo-400" />
             </div>

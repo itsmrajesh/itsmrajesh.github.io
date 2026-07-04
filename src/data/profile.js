@@ -2,14 +2,14 @@ export const profile = {
   name: "M Rajesh",
   title: "Software Engineer",
   subtitle: "AI & Backend Engineering",
-  experience: "5.4+",
+  experience: "5.7+",
   location: "Bangalore, Karnataka",
   email: "m.rajesh242@gmail.com",
   phone: "+91-9483685398",
   github: "https://github.com/itsmrajesh",
   linkedin: "https://www.linkedin.com/in/itsmrajesh/",
   summary:
-    "Experienced Software Engineer specializing in backend engineering, microservices architecture, and AI-powered application development. Strong focus on Large Language Models (LLMs), agentic workflows, and intelligent automation systems. Building scalable AI solutions using Python, FastAPI, LangChain, Strands Agents, and MCP.",
+    "Experienced Software Engineer with 5.7 years of expertise in backend engineering, microservices architecture, and AI-powered application development. Strong specialization in Large Language Models (LLMs), agentic workflows, and intelligent automation systems. Building scalable AI solutions using Python, FastAPI, LangChain, Strands Agents, MCP, and vector databases.",
 }
 
 export const skills = [
@@ -23,6 +23,7 @@ export const skills = [
       "Prompt Engineering",
       "Vector Databases",
       "Agentic Workflows",
+      "Agent Skills",
     ],
   },
   {
@@ -57,6 +58,7 @@ export const skills = [
       "Jira",
       "Postman",
       "GitHub Copilot",
+      "Claude (Code, Cowork, Desktop)",
       "Keycloak",
       "CouchDB",
       "PostgreSQL",
@@ -71,7 +73,7 @@ export const experience = [
     period: "Apr 2024 - Present",
     location: "Bangalore",
     highlights: [
-      "Developing AI-powered chatbot and agentic solutions using Python, Strands Agents, AWS services, and modern LLM frameworks",
+      "Working as a Backend Engineer, developing and optimizing AI-powered chatbot and agentic solutions using Python, Strands Agents, AWS services, and modern LLM frameworks",
       "Built and orchestrated agentic workflows with multi-step reasoning, tool orchestration, memory handling, and model-agnostic agent design",
       "Developed and deployed MCP servers using FastMCP for standardized tool interoperability in agentic ecosystems",
       "Integrated MCP servers into agentic workflows for dynamic tool discovery, invocation, and coordination across distributed AI systems",
